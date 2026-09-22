@@ -113,6 +113,8 @@ body { overflow-x: clip; }
 .section-kicker { max-width: 390px; }
 .section-kicker h2 { font-size: clamp(27px,2.5vw,36px); line-height: 1.2; }
 .section-number { display: inline-block; margin-bottom: 24px; font-family: Poppins,sans-serif; color: var(--red); font-size: 13px; }
+.section-logo { background: var(--red); padding: 34px 30px; max-width: 300px; display: flex; align-items: center; }
+.section-logo img { width: 100%; height: auto; }
 .related-section { padding: 52px 0 0; margin-top: 90px; }
 .related-section>h2 { font-size: clamp(28px,3.2vw,44px); margin-bottom: 35px; }
 .related-links { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }

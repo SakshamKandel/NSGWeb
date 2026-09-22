@@ -1,4 +1,4 @@
-export type StorySection = { title: string; paragraphs: string[] };
+export type StorySection = { title: string; paragraphs: string[]; logo?: string };
 export type PlayerStory = { role: string; headline: string; intro: string; paragraphs: string[]; facts: { label: string; value: string }[]; sources: { label: string; url: string }[] };
 export const playerStories: Record<string, PlayerStory> = {
   'william-bosisto': {
@@ -80,7 +80,7 @@ export const expertise = [
   { slug:'talent', label:'For Talent', title:'Every career has its own story.', intro:'We work with the people at the centre of sport. Ness Sport Global brings player management and talent management together under one organisation.', sections:[
     {title:'The player comes first.',paragraphs:['Our cricket roster includes eight players with backgrounds across six countries. It brings together different roles, stages of experience and routes into the game — from regional cricket to international competition.','A shared roster does not mean a shared career path. Our approach starts with recognising the individual: where they come from, the game they play and the direction of their next chapter.']},
     {title:'Connected to the wider game.',paragraphs:['Our work with talent sits alongside our involvement in teams and events. The Vasteras United campaign, international tour plans and the NSG Unity Cup make those connections visible across the organisation.','This wider perspective informs how we think about talent: as people within a changing sporting landscape, with a story that continues beyond a single match or competition.']},
-    {title:'NSG Talents. NSG Next.',paragraphs:['NSG Talents is our talent-management area, with NSG Next forming part of that offering. It sits alongside the sports roster within Ness Sport Global.']},
+    {title:'NSG Talents. NSG Next.',logo:'nsg-next.webp',paragraphs:['NSG Talents is our talent-management area, with NSG Next forming part of that offering. It sits alongside the sports roster within Ness Sport Global.']},
   ], links:[{label:'Meet our players',href:'/players/'},{label:'Explore NSG Next',href:'/nsg-next/'}] },
   { slug:'sports-talent', label:'Sports Talent', title:'Individual ability. A global game.', intro:'Our sports-talent work begins with cricket and the players we manage across Australia, India, Nepal, Afghanistan, Italy and the United Arab Emirates.', sections:[
     {title:'Different roles. Shared commitment.',paragraphs:['The NSG roster includes batters, wicketkeepers, spin bowlers and all-rounders. Each discipline contributes something different to the balance of a side, and each player brings a distinct background to the group.','We present those differences through individual profiles, recognising the player’s cricket identity rather than reducing a career to a single number or result.']},
