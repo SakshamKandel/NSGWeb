@@ -8,11 +8,11 @@ export const players = [
   { slug: 'adithya-shetty', name: 'Adithya Shetty', country: 'United Arab Emirates', file: 'Adithya Shetty ( UAE ).png' },
   { slug: 'jay-gohel', name: 'Jay Gohel', country: 'India · Saurashtra', file: 'Jay Gohel ( Saurashtra).png' },
 ];
-export type MenuGroup = { title: string; items: { title: string; href: string; logo?: string }[] };
+export type MenuGroup = { title: string; items: { title: string; href: string }[] };
 export const navigation: { title: string; overview: string; groups: MenuGroup[] }[] = [
   { title: 'For Talent', overview: '/expertise/talent/', groups: [
     { title: 'Sports Talent', items: [{title:'Our Approach',href:'/expertise/sports-talent/'},{ title: 'Our Players', href: '/players/' }, ...players.map(p => ({ title: p.name, href: `/players/${p.slug}/` }))] },
-    { title: 'NSG Talents', items: [{ title: 'NSG Next', href: '/nsg-next/', logo: 'nsg-next.webp' }] },
+    { title: 'NSG Talents', items: [{ title: 'NSG Next', href: '/nsg-next/' }] },
   ] },
   { title: 'For Teams', overview: '/expertise/teams/', groups: [
     { title: 'Team Management', items: [{title:'Our Approach',href:'/expertise/team-management/'},{ title: 'Vasteras United', href: '/work/vasteras-united/' }] },
