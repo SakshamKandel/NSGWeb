@@ -12,7 +12,6 @@ export type MenuGroup = { title: string; items: { title: string; href: string }[
 export const navigation: { title: string; overview: string; groups: MenuGroup[] }[] = [
   { title: 'For Talent', overview: '/expertise/talent/', groups: [
     { title: 'Sports Talent', items: [{title:'Our Approach',href:'/expertise/sports-talent/'},{ title: 'Our Players', href: '/players/' }, ...players.map(p => ({ title: p.name, href: `/players/${p.slug}/` }))] },
-    { title: 'NSG Talents', items: [{ title: 'NSG Next', href: '/nsg-next/' }] },
   ] },
   { title: 'For Teams', overview: '/expertise/teams/', groups: [
     { title: 'Team Management', items: [{title:'Our Approach',href:'/expertise/team-management/'},{ title: 'Vasteras United', href: '/work/vasteras-united/' }] },
