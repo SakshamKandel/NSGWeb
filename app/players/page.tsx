@@ -1,0 +1,9 @@
+import Link from 'next/link';
+import PageShell from '@/components/page-shell';
+import RelatedLinks from '@/components/related-links';
+import CountryFlag from '@/components/country-flag';
+import { players } from '@/lib/content';
+import { playerStories } from '@/lib/stories';
+export const metadata={title:'Our Players'};
+export default function Players(){return <PageShell><header className="roster-heading"><div><p className="eyebrow">For Talent / Sports Talent</p><h1 className="red-text">Our Players<span className="heading-count">08</span></h1></div><div><p className="lead-copy">Different stories.<br/>The same love for the game.</p><p className="body-copy">Eight players. Six countries. A roster that brings together international experience, regional roots and different ways of playing cricket.</p></div></header><div className="player-grid">{players.map(p=><Link key={p.slug} href={`/players/${p.slug}/`} className="player-card" data-reveal><div className="portrait"><img src={`/images/${p.slug}.webp`} alt={p.name} width="600" height="800" loading="lazy"/><span className="portrait-arrow" aria-hidden="true">↗</span></div><div className="country"><CountryFlag country={p.country}/></div><h2>{p.name}</h2><p className="player-role">{playerStories[p.slug].role}</p></Link>)}</div><section className="roster-note" data-reveal><p className="eyebrow">Our perspective</p><h2>More than a name<br/>on a team sheet.</h2><p className="body-copy">Every player has a different route into the game. Our roster brings those individual journeys together, from Australian domestic cricket and India’s regional competitions to the international stories of Nepal, Afghanistan, Italy and the UAE.</p><Link className="text-link" href="/expertise/sports-talent/">Our approach to sports talent →</Link></section><RelatedLinks links={[{label:'Discover NSG Next',href:'/nsg-next/'},{label:'Explore our team projects',href:'/expertise/teams/'}]}/></PageShell>;}
+

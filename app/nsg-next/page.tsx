@@ -1,0 +1,9 @@
+import PageShell from '@/components/page-shell';
+import StorySections from '@/components/story-sections';
+import RelatedLinks from '@/components/related-links';
+export const metadata={title:'NSG Next — NSG Talents'};
+export default function NextTalent(){return <PageShell><div className="next-hero"><div><p className="eyebrow">For Talent / NSG Talents</p><h1 className="red-text">The story<br/>continues.</h1><p className="lead-copy">NSG Next. Talent management with an eye on the next chapter.</p></div><div className="next-mark"><img src="/images/nsg-next.webp" alt="NSG Next" width="600" height="400"/></div></div><StorySections sections={[
+{title:'Introducing NSG Next.',paragraphs:['NSG Next forms part of NSG Talents, our talent-management offering within Ness Sport Global. It sits alongside our work with sports players, teams and events.','The idea behind the name is forward-looking: recognising the person behind the talent and thinking about the chapter that comes next.']},
+{title:'Every talent is individual.',paragraphs:['No two people bring the same background, ambitions or way of working. Our approach to talent begins with that difference, rather than treating every profile as interchangeable.','A considered direction starts with understanding the person. It means looking at their identity, the audience they connect with and the setting in which their work can make sense.']},
+{title:'Part of the NSG world.',paragraphs:['NSG Next belongs to an organisation that also manages cricket players, works with teams and organises sporting events. That context gives our talent work a place within a wider sporting and live-event picture.','Explore the NSG roster and projects to see the people and experiences that make up that world.']}
+]}/><RelatedLinks title="Discover Ness Sport Global." links={[{label:'Our talent approach',href:'/expertise/talent/'},{label:'Who we are',href:'/about/'}]}/></PageShell>;}
